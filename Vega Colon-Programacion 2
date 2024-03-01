@@ -1,0 +1,26 @@
+EJERCICIO 1:
+class Estudiante:
+    def __init__(self, nombre, apellido):
+        self.nombre = nombre
+        self.apellido = apellido
+
+    def obtener_nombre(self):
+        return f'Mi nombre es {self.nombre}'
+    def obtener_apellido(self):
+        return f' {self.apellido}'
+P = Estudiante("Carlos","Vega")
+print(P.obtener_nombre()+P.obtener_apellido())
+
+
+EJERCICIO 2:
+class Estudiante:
+    def __init__(self, nombre, apellido, correo, telefono, cedula):
+        self.nombre = nombre
+        self.apellido = apellido
+        self.correo = correo
+        self.telefono = telefono
+        self.cedula = cedula
+    def obtener_nombre(self):
+        return f'Mi nombre es {self.nombre} {self.apellido}, mi correo es {self.correo} mi nùmero de celular: {self.telefono} y mi cedula {self.cedula}'
+P = Estudiante("Carlos","Vega","carlos.vega86@hotmail.com","3113220390","1047383743")
+print("Mi nombre es ",P.nombre, " ",P.apellido," mi correo es", P.correo, " mi numero de celular es: ",P.telefono, " y mi cèdula es: ", P.cedula)
